@@ -6,7 +6,7 @@ namespace Merchistoun.Data
 	{
 		public abstract ConnectionStringSettings ConnectionStringSettings { get; }
 
-		internal int? CommandTimeout;
+		public int? CommandTimeout { get; set; }
 
 		public IDbCommand<T> CreateCommand<T>()
 		{
